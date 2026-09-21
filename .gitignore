@@ -1,0 +1,6 @@
+dicionario.exe
+dicionario
+*.o
+*.obj
+.vscode/
+build/
