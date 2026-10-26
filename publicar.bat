@@ -4,7 +4,7 @@ setlocal
 cd /d "%~dp0"
 
 set "MENSAGEM=%~1"
-if "%MENSAGEM%"=="" set "MENSAGEM=Atualizacao do projeto dicionario"
+if "%MENSAGEM%"=="" set "MENSAGEM=Implementa Parcial 3: ABB para ordenacao alfabetica"
 
 echo.
 echo === Publicando no GitHub ===

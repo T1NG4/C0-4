@@ -111,6 +111,7 @@ bool Grafo::cadastrarPalavra(const std::string& palavra, const std::string& sign
     }
 
     adicionarAresta(indicePalavra, indiceSignificado);
+    abb.insert(palavra, indicePalavra);
     return true;
 }
 
@@ -174,4 +175,8 @@ std::list<std::string> Grafo::buscarSinonimos(const std::string& palavra) const 
     }
 
     return sinonimos;
+}
+
+std::list<std::string> Grafo::listarPalavrasOrdenadas() const {
+    return abb.inOrder();
 }

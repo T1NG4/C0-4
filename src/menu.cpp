@@ -114,8 +114,17 @@ void listarSinonimos(Grafo& grafo) {
 }
 
 void listarOrdemAlfabetica(Grafo& grafo) {
-    (void)grafo;
-    funcionalidadeEmConstrucao();
+    const std::list<std::string> palavras = grafo.listarPalavrasOrdenadas();
+    if (palavras.empty()) {
+        std::cout << "Nenhuma palavra cadastrada.\n";
+        return;
+    }
+
+    std::cout << "Palavras em ordem alfabética:\n";
+    std::list<std::string>::const_iterator it;
+    for (it = palavras.begin(); it != palavras.end(); ++it) {
+        std::cout << "- " << *it << '\n';
+    }
 }
 
 void listarOrdemTamanho(Grafo& grafo) {

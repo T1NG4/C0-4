@@ -2,6 +2,7 @@
 #define GRAFO_H
 
 #include "palavra.h"
+#include "abb.h"
 
 #include <list>
 #include <string>
@@ -22,11 +23,13 @@ public:
     bool palavraExiste(const std::string& palavra) const;
     std::list<std::string> buscarSignificados(const std::string& palavra) const;
     std::list<std::string> buscarSinonimos(const std::string& palavra) const;
+    std::list<std::string> listarPalavrasOrdenadas() const;
 
 private:
     No nos[MAX_NOS];
     int quantidadeNos;
     std::list<Aresta> adj[MAX_NOS];
+    ABB abb;
 
     int buscarIndicePorId(const std::string& id) const;
     int buscarIndicePalavra(const std::string& palavra) const;

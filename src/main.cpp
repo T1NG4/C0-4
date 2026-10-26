@@ -2,11 +2,11 @@
 #include "grafo.h"
 #include "menu.h"
 
+#include <iostream>
+
 #ifdef _WIN32
 #include <windows.h>
 #endif
-
-#include <iostream>
 
 int main() {
 #ifdef _WIN32

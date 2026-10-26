@@ -8,6 +8,7 @@ O projeto armazena palavras em High Valyrian com significados em português e co
 
 - **Parcial 1**: menu com opções a–g, cada uma em função dedicada
 - **Parcial 2**: cadastro de palavras, grafo de adjacências, listagem de significados e sinônimos
+- **Parcial 3**: listagem de palavras em ordem alfabética usando Árvore Binária de Busca (ABB)
 - **Extra**: geração automática de coordenadas no cadastro
 
 ## Compilação (Windows / PowerShell)
@@ -42,7 +43,8 @@ make
 - **a)** Cadastrar palavra (fictícia + significado em português; coordenadas geradas automaticamente)
 - **b)** Listar significados de uma palavra
 - **c)** Listar sinônimos de uma palavra
-- **d–g)** Funcionalidades previstas para entregas futuras
+- **d)** Listar palavras em ordem alfabética (usando Árvore Binária de Busca)
+- **e–g)** Funcionalidades previstas para entregas futuras
 
 ### Exemplo de cadastro
 

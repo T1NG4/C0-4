@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O0
 TARGET = dicionario
-SRC = src/main.cpp src/palavra.cpp src/grafo.cpp src/dicionario.cpp src/menu.cpp
+SRC = src/main.cpp src/palavra.cpp src/grafo.cpp src/dicionario.cpp src/menu.cpp src/abb.cpp
 
 all: $(TARGET)
 
